@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", sans-serif;
+}
+
+body {
+    background: #343541;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    background: #343541;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#chat_container {
+    padding-bottom: 20px;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#chat_container::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.ai {
+    background: #40414F;
+}
+
+.chat {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    line-height: 1.6;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 660px) {
+    .chat {
+        padding-right: 22%;
+    }
+}
+
+.profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background: #5436DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai .profile {
+    background: #10a37f;
+}
+
+.profile img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.message {
+    flex: 1;
+    font-size: 16px;
+    color: #dcdcdc;
+    max-width: 80vw;
+    overflow-x: scroll;
+    margin-top: 7px;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.message::-webkit-scrollbar {
+    display: none;
+}
+
+form {
+    width: 90%;
+    max-width: 1280px;
+    margin: 2rem auto;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background: #40414F;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+textarea {
+    font-family: "Source Code Pro", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+
+textarea::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+button {
+    outline: 0;
+    border: 0;
+    padding: 0.2rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    background: transparent;
+}
+
+button:hover {
+    background: #202123;
+    padding: 0.2rem;
+    border-radius: 15%;
+}
+
+form img {
+    width: 25px;
+    height: 25px;
+}
+
