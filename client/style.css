@@ -93,6 +93,7 @@ body {
     overflow-x: scroll;
     margin-top: 7px;
 
+    white-space: pre-wrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
